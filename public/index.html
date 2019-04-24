@@ -137,12 +137,38 @@
           max-width: 160em;
         }
       }
+
+      body, html {
+        height:100%;
+        width:100%;
+        padding:0;
+      }
+
+      #wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height:100%;
+        width:100%;
+      }
+
+      #wrapper a, #wrapper a:hover {
+        text-decoration: none;
+        margin-top: .5em;
+      }
+
+      #wrapper img {
+        margin:1em;
+      }
     </style>
   </head>
   <body lang="en">
-    <section>
-      <div class="wrapper">
-        <h1>Welcome.</h1>
+      <div id="wrapper">
+        <img src="./mohub.png"/><br/>
+        <a href="http://mohub.dev.efforia.io/">Landing Page</a>
+        <a href="http://mohub.api.efforia.io/admin">Dashboard</a>
+        <!--<section><h1>Welcome.</h1>
         <p>You successfully created your Strapi application.</p>
         <p>You are looking at: <code>./public/index.html</code>.</p>
         <p>Your built-in admin panel is available at <a href="/admin" target="blank">/admin</a>.
@@ -158,8 +184,7 @@
             <li><a href="https://twitter.com/strapijs" target="blank">news on Twitter</a></li>
             <li><a href="http://slack.strapi.io" target="blank">Real-time support on Slack</a></li>
           </ul>
-        </p>
+        </p>  </section>!-->
       </div>
-    </section>
   </body>
 </html>
