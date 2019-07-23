@@ -1,13 +1,8 @@
 {
-  "name": "Strapi Sample",
-  "description": "A Srapi app",
-  "repository": "https://github.com/strapi/strapi-heroku-app",
-  "logo": "https://raw.githubusercontent.com/strapi/strapi-heroku-app/master/public/avatar-strapi.jpg",
-  "keywords": ["node", "strapi", "API"],
-  "addons": [
-    {
-      "plan": "mongolab:sandbox",
-      "as": "DATABASE"
-    }
-  ]
+  "name": "Start on Heroku: Node.js",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.com/heroku/node-js-getting-started",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
 }
