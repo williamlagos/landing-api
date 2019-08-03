@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const express = require('express')
 const logger = require('morgan')
 const path = require('path')
+const cors = require('cors')
 const PORT = process.env.PORT || 5000
 const leads = require('./api/lead')
 
@@ -20,6 +21,7 @@ mongoose.connect(uristring, function (err, res) {
   } else {
     console.log('Succeeded connected to: ' + uristring)
     express()
+      .use(cors())
       .use(logger(':method :url :status :res[content-length] - :response-time ms'))
       .use(express.static(path.join(__dirname, 'public')))
       .use(bodyParser.json())
