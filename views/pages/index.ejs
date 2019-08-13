@@ -37,21 +37,10 @@
         <span class="input-group-addon">/</span>
       </div>
     </div>
-  </div>
-  <div class="media">
-    <div class="media-left">
-      <a href="#">
-        <img class="media-object" src="https://via.placeholder.com/150" alt="...">
-      </a>
-    </div>
-    <div class="media-body">
-      <h2 class="media-heading">Hotmart</h2>
-      <p>Cole seu link de referência da plataforma aqui</p>
-      <div class="input-group">
-        <span class="input-group-addon" id="basic-addon1">http://</span>
-        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-        <span class="input-group-addon">/</span>
-      </div>
+    <div class="media-right">
+      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+        Assistir Tutorial
+      </button>
     </div>
   </div>
   <div class="media">
@@ -69,6 +58,11 @@
         <span class="input-group-addon">/</span>
       </div>
     </div>
+    <div class="media-right">
+      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+        Assistir Tutorial
+      </button>
+    </div>
   </div>
   <div class="media">
     <div class="media-left">
@@ -83,6 +77,53 @@
         <span class="input-group-addon" id="basic-addon1">http://</span>
         <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
         <span class="input-group-addon">/</span>
+      </div>
+    </div>
+    <div class="media-right">
+      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+        Assistir Tutorial
+      </button>
+    </div>
+  </div>
+  <div class="media">
+    <div class="media-left">
+      <a href="#">
+        <img class="media-object" src="https://via.placeholder.com/150" alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h2 class="media-heading">Hotmart</h2>
+      <p>Cole seu link de referência da plataforma aqui</p>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">http://</span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        <span class="input-group-addon">/</span>
+      </div>
+    </div>
+    <div class="media-right">
+      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
+        Assistir Tutorial
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Tutorial</h4>
+      </div>
+      <div class="modal-body">
+        <iframe id="ytplayer" type="text/html" width="100%" height="300px"
+  src="http://www.youtube.com/embed/fa5p19APgd8?autoplay=0&origin=http://example.com"
+  frameborder="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
       </div>
     </div>
   </div>
