@@ -15,7 +15,7 @@ const LeadCtrl = {
     return saved // Returns the created lead
   },
   list: async function () {
-    return (await Lead.find()).map((lead) => lead.email) // Gets leads list
+    return (await Lead.find()).map((lead) => lead) // Gets leads list
   },
   get: async function (id) {
     return Lead.findOne({ _id: id }) // Gets the lead information

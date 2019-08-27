@@ -10,7 +10,8 @@ const mongoose = require('mongoose')
 
 // --------------- Module Schema
 const LeadSchema = mongoose.Schema({
-  email: { type: String, lowercase: true, required: true }
+  email: { type: String, lowercase: true, required: true, unique: true },
+  created: { type: Date, default: Date.now }
 })
 
 // --------------- Module Plugins
