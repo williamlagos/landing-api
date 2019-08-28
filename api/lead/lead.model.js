@@ -22,5 +22,9 @@ const LeadSchema = mongoose.Schema({
 // LeadSchema.plugin(lifecycle)
 // LeadSchema.plugin(timestamps)
 
+const Lead = mongoose.model('Lead', LeadSchema)
+
+Lead.createIndexes()
+
 // --------------- Module Model
-module.exports = mongoose.model('Lead', LeadSchema)
+module.exports = Lead
