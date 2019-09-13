@@ -44,8 +44,9 @@ router.get('/', async (req, res) => {
  */
 router.get('/:id', async (req, res) => {
   const id = req.params.id
+  console.log(`ID: ${id}`)
   const leads = await controller.get(id)
-  return res.status(200).redirect(leads)
+  return res.status(200).json(leads)
 })
 
 module.exports = router

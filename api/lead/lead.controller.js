@@ -23,7 +23,9 @@ const LeadCtrl = {
     return (await Lead.find()).map((lead) => lead) // Gets leads list
   },
   get: async function (id) {
-    return Lead.findOne({ _id: id }) // Gets the lead information
+    const result = await Lead.findOne({ _id: id })
+    // console.log(`Object: ${result}`)
+    return result // Gets the lead information
   }
 }
 
