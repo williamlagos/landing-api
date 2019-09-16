@@ -29,6 +29,7 @@ mongoose.connect(uristring, function (err, res) {
       .set('views', path.join(__dirname, 'views'))
       .set('view engine', 'ejs')
       .get('/', (req, res) => res.render('pages/index'))
+      .get('/referral', (req, res) => res.render('pages/referral'))
       .use('/leads/', leads)
       .listen(PORT, () => console.log(`Listening on ${PORT}`))
   }
