@@ -11,7 +11,7 @@ const leads = require('./api/lead')
 // localhost if we don't find one.
 var uristring =
   process.env.DATABASE_URI ||
-  'mongodb://localhost/mohub'
+  'mongodb://localhost/landing'
 
 // Makes connection asynchronously.  Mongoose will queue up database
 // operations and release them when the connection is complete.

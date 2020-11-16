@@ -1,1 +1,1 @@
-from williamlagos/eos:latest
+FROM williamlagos/eos:latest
