@@ -1,0 +1,9 @@
+build:
+    docker:
+        web: Dockerfile
+release:
+    image: web
+    command:
+        - echo 'Starting server after deployment!';
+run:
+    web: npm start
